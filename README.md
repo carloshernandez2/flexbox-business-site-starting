@@ -22,6 +22,8 @@ The purpose of the proyect is to use flexbox to design and build the layout for 
 
 ## Screenshots
 
+Background image screenshot:
+
 ![Example screenshot](./Images/postre-de-limón-background.jpg)
 
 ## Technologies
