@@ -1,0 +1,274 @@
+@import url('fonts.css');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("./Images/postre-de-limón-background.jpg");
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: cover;
+    min-height: 100vmin;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'Yellowtail', cursive;
+}
+
+p {
+    font-family: 'Montserrat', serif;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 2rem;
+    width: 70%;
+}
+
+.navigation {
+    background-color: rgba(5, 205, 255, 0.5);
+    display: flex;
+    justify-content: space-between;
+    height: 69px;
+    border-bottom: 1px solid seashell;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+nav {
+    width: 500px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav ul a {
+    color: black;
+    text-decoration: none;
+}
+
+header figure img{
+    height: 50px;
+    margin-left: 10px;
+    border-radius: 100px;
+}
+
+header figure {
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    position: relative;
+    top: 100px;
+    text-align: center;
+    margin-bottom: 100px;
+    font-size: 5rem;
+}
+
+main {
+    position: relative;
+    top: 70px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template: 3fr 1fr repeat(4, 3fr) 1fr 3fr 3fr / repeat(2, auto);
+    gap: 1vmin;
+    grid-template-areas: "mission mission"
+                         "titulo1 titulo1"
+                         "producto1 descri1"
+                         "descri2 producto2"
+                         "producto3 descri3"
+                         "descri4 producto4"
+                         "titulo2 titulo2"
+                         "emp1 descri5"
+                         "descri6 emp2";
+}
+
+main figure img {
+    margin: 20px;
+    border-radius: 100px;
+    min-width: 150px;
+    flex-shrink: 1;
+}
+
+figcaption {
+    font-family: 'Montserrat', serif;
+    font-weight: bold;
+    font-style: italic;
+    flex-shrink: 1;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.mission {
+    background-color: rgba(138, 68, 2, 0.5);
+    grid-area: mission;
+    font-size: 3rem;
+}
+
+.producto1 {
+    background-color: rgba(56, 165, 42, 0.5);
+    grid-area: producto1;
+}
+
+.producto2 {
+    background-color: rgba(238, 16, 171, 0.5);
+    grid-area: producto2;
+}
+
+.producto3 {
+    background-color: rgba(112, 16, 238, 0.5);
+    grid-area: producto3;
+}
+
+.producto4 {
+    background-color: rgba(16, 31, 238, 0.5);
+    grid-area: producto4;
+}
+
+.titulo1{
+    grid-area: titulo1;
+    font-size: 3rem;
+}
+.titulo2{
+    grid-area: titulo2;
+    font-size: 3rem;
+}
+.descri1 {
+    background-color: rgba(16, 138, 238, 0.5);
+    grid-area: descri1;
+}
+
+.descri2 {
+    background-color: rgba(16, 238, 190, 0.5);
+    grid-area: descri2;
+}
+
+.descri3 {
+    background-color: rgba(16, 238, 71, 0.5);
+    grid-area: descri3;
+}
+
+.descri4 {
+    background-color: rgba(97, 238, 16, 0.5);
+    grid-area: descri4;
+}
+
+.descri5 {
+    background-color: rgba(97, 238, 16, 0.5);
+    grid-area: descri5;
+}
+
+.descri6 {
+    background-color: rgba(197, 238, 16, 0.5);
+    grid-area: descri6;
+}
+
+.emp1 {
+    background-color: rgba(238, 168, 16, 0.5);
+    grid-area: emp1;
+}
+
+.emp2 {
+    background-color: rgba(238, 49, 16, 0.5);
+    grid-area: emp2;
+}
+
+.pageInfo {
+    position: relative;
+    top: 100px;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(5, 205, 255, 0.5);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.pageInfo h4 {
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 1000px){
+    main {
+        width: 95vmin;
+        display: grid;
+        grid-template: repeat(2, 3fr) repeat(2, 1fr) repeat(8, 3fr) repeat(2, 1fr) repeat(4, 3fr) / 95vmin;
+        grid-template-areas: "mission"
+                             "mission"
+                             "titulo1"
+                             "titulo1"
+                             "producto1"
+                             "descri1"
+                             "descri2" 
+                             "producto2"
+                             "producto3"
+                             "descri3"
+                             "descri4"
+                             "producto4"
+                             "titulo2"
+                             "titulo2"
+                             "emp1"
+                             "descri5"
+                             "descri6"
+                             "emp2";
+    }
+}
+
+@media only screen and (max-width: 600px){
+    figcaption {
+        display: none;
+    }
+
+    .info {
+        flex-direction: row;
+    }
+
+    .mission {
+        flex-direction: column;
+    }
+
+    .descri1 {
+        flex-direction: column;
+    }
+    
+    .descri2 {
+        flex-direction: column;
+    }
+    
+    .descri3 {
+        flex-direction: column;
+    }
+    
+    .descri4 {
+        flex-direction: column;
+    }
+    
+    .descri5 {
+        flex-direction: column;
+    }
+    
+    .descri6 {
+        flex-direction: column;
+    }
+}
