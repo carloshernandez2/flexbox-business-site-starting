@@ -79,4 +79,4 @@ I was motivated by the idea of a fictional dessert shop for my grandma.
 
 ## Contact
 
-Created by [@CarlosHernández](linkedin.com/in/carlos-manuel-hernández-consuegra-42975a189) - feel free to contact me!
+Created by [@CarlosHernández](https://linkedin.com/in/carlos-manuel-hernández-consuegra-42975a189) - feel free to contact me!
